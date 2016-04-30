@@ -16,7 +16,7 @@ public class FirstPage implements ActionListener {
 	private JButton b3;
 	private JLabel l1;
 	
-Timer t = new Timer();
+TimerGui t = new TimerGui();
 	
 	
 
