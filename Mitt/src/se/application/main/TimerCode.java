@@ -4,10 +4,7 @@ import java.io.IOException;
 
 public class TimerCode {
 
-	
-	
-	
-	public void shutdown() throws IOException{
+	public void shutdown() throws IOException {
 		Runtime runtime = Runtime.getRuntime();
 		Process proc = runtime.exec("shutdown -s -t 0");
 		System.exit(0);
