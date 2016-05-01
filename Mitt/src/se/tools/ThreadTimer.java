@@ -12,19 +12,22 @@ public class ThreadTimer extends Thread {
 
     public void run() {
     	
-		try {
-			sleep(TG.getTid()* 1000);
-			TC.shutdown();
-		} catch (InterruptedException e) {
+
+			try {
+				sleep(TG.getTid()* 60);
+				TC.shutdown();
+			} catch (InterruptedException | IOException e) {
+				System.out.println("något gick fel");
+				e.printStackTrace();
+			}
 			
-			e.printStackTrace();
-		} catch (IOException e) {
+		
 			
-			e.printStackTrace();
+			
 		}
          
     }
-}
+
 	
 	
 	

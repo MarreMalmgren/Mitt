@@ -17,7 +17,7 @@ public class TimerGui {
 	private JTextField t1;
 	
 	
-	String tid;
+	int tid;
 	
 	public void RunGuiT(){
 		
@@ -43,13 +43,13 @@ public class TimerGui {
 		mainpanel.add(t1);
 		F.add(mainpanel);
 	}
-	public String getTid () {
+	public int getTid () {
 		return tid;
 	}
 	public void actionPerformed(ActionEvent e) throws IOException {
 		
 		if (e.getSource() == b1){
-			tid = t1.getText();
+			tid = Integer.parseInt(t1.getText());
 			ThreadTimer TT = new ThreadTimer();
 			
 			TT.run();
